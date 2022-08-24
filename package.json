@@ -1,0 +1,31 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "description": "Testing Express server app using Chai and Mocha",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/app.ts",
+    "test": "NODE_ENV=test mocha --check-leaks -r tsconfig-paths/register -r ts-node/register \"test/**/*.spec.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.12",
+    "@types/supertest": "^2.0.12",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.7.4"
+  }
+}
